@@ -14,6 +14,8 @@ const orderSchema = Schema(
     postOffice: { type: String },
     connectionMethod: [{ type: String }],
     additionalInfo: { type: String },
+    amountInOrder: { type: Number },
+    quantityInOrder: { type: Number },
     status: { type: String, default: "new" },
   },
   { versionKey: false, timestamps: true }

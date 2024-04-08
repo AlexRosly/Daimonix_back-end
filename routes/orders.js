@@ -6,6 +6,9 @@ const router = express.Router();
 //get new order
 router.get("/get-new-order", ctrlWrapper(ctrl.getNewOrder));
 
+//get close order
+// router.get("/get-new-order", ctrlWrapper(ctrl.getNewOrder));
+
 //create order
 router.post("/add-order", ctrlWrapper(ctrl.createOrder));
 

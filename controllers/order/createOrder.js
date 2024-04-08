@@ -1,6 +1,7 @@
 const { Order } = require("../../models");
 
 const createOrder = async (req, res) => {
+  console.log("object", req.body);
   const result = await Order.create({ ...req.body });
 
   if (!result) {
