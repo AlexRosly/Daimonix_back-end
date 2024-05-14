@@ -13,5 +13,8 @@ router.get("/get-new-order", ctrlWrapper(ctrl.getNewOrder));
 router.post("/add-order", ctrlWrapper(ctrl.createOrder));
 
 //confirm order
+router.patch("/finish-to-processing", ctrlWrapper(ctrl.confirmOrder));
+
+//confirm order
 
 module.exports = router;

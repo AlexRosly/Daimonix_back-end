@@ -17,6 +17,7 @@ const orderSchema = Schema(
     amountInOrder: { type: Number },
     quantityInOrder: { type: Number },
     status: { type: String, default: "new" },
+    statusAfterProcessing: [{ type: String }],
   },
   { versionKey: false, timestamps: true }
 );
