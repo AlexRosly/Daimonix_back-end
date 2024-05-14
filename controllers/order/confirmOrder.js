@@ -2,9 +2,10 @@ const { Order } = require("../../models");
 
 const confirmOrder = async (req, res) => {
   const { id, statusAfterProcessing } = req.body;
+
   const updateStatus = await Order.findByIdAndUpdate(
     id,
-    { statusAfterProcessing },
+    { statusAfterProcessing, status: "confirmed" },
     { new: true }
   );
 
